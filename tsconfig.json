@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "vue/ref-macros",
+      "windicss"
+    ],
+    "paths": {
+      "~~/*": ["./*"],
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "lib": ["DOM", "ESNext", "dom.iterable", "scripthost"],
+    "outDir": "dist",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": true,
+    "allowJs": true
+  },
+  "include": ["./**/*"],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "cypress",
+    "vite.config.ts",
+  ]
+}
